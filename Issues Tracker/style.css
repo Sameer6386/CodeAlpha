@@ -1,0 +1,68 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: cornflowerblue;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #d58e8e;
+    padding: 20px;
+    border: 20px solid #d58e8e;
+    border-radius: 80px;
+}
+
+button {
+    padding: 10px;
+    border-radius:40%;
+    background-color: brown;
+    color: black;
+    margin-bottom: 50px;
+    margin-right: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+form{
+    margin: 50px;
+    border-radius:20% ;
+    margin-bottom:0cap;
+    margin-top: 0%;
+    text-align:justify;
+    height:fit-content;
+    justify-content: baseline;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    left: 100px;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(159, 91, 91, 0.4);
+}
+
+.modal-content {
+    background-color: beige;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color:blue;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: wheat;
+    text-decoration: none;
+    cursor: pointer;
+}

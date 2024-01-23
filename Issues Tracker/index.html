@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Issue Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Issue Tracker</h1>
+        <div id="issues-container"></div>
+        <button onclick="openCreateIssueModal()">Create New Issue</button>
+    </div>
+
+    <!-- Create Issue Modal -->
+    <div id="createIssueModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCreateIssueModal()">&times;</span>
+            <h2>Create New Issue</h2>
+            <form onsubmit="createIssue(event)">
+                <label for="title">Title:</label>
+                <input type="text" id="title" required>
+                <label for="description">Description:</label>
+                <textarea id="description" required></textarea>
+                <label for="priority">Priority:</label>
+                <select id="priority">
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+                <button type="submit">Create Issue</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
